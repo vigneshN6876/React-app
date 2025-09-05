@@ -1,17 +1,19 @@
 import React from 'react'
 import html from '../assets/images.png'
-const Courses = (props) => {
+const Courses = ({images = html , name , price , rating}) => {
     
   return (
     <>
         <div className="card">
-            <img src={props.images} alt="" />
-            <h3>{props.name}</h3>
-            <h3>${props.price}</h3>
-            <span>Rating {props.rating}</span>
+            <img src={images} alt="" />
+            <h3>{name}</h3>
+            <h3>${price}</h3>
+            <span>Rating {rating}</span>
         </div>
     </>
   )
 }
+
+
 
 export default Courses
