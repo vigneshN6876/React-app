@@ -12,6 +12,7 @@ function App() {
       <Courses name = "HTML" price = {199} images = {html} rating = {5} />
       <Courses name = "Css" price = {199} images = {css} rating = {5} />
       <Courses name = "javaScript" price = {199} images = {js} rating = {5} />
+      <Courses name = "Node js" price = {199} rating = {5} />
     </>
   )
 }
