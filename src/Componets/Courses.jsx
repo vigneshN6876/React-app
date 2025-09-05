@@ -1,8 +1,17 @@
 import React from 'react'
 import html from '../assets/images.png'
-const Courses = ({images = html , name , price , rating}) => {
+import PropTypes from 'prop-types'
+
+const Courses = ({
+  images = html,
+  name = "Default Course",
+  price = 0,
+  rating = 0,
+  show = false
+}) => {
     
-  return (
+  if(show){
+    return (
     <>
         <div className="card">
             <img src={images} alt="" />
@@ -12,8 +21,14 @@ const Courses = ({images = html , name , price , rating}) => {
         </div>
     </>
   )
+  }
 }
 
+Courses.propTypes = {
+name: PropTypes.string,
+rating: PropTypes.number,
+show : PropTypes.bool
+}
 
 
 export default Courses
