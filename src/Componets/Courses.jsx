@@ -7,7 +7,7 @@ const Courses = ({
   name = "Default Course",
   price = 0,
   rating = 0,
-  show = false
+  
 }) => {
     
   
