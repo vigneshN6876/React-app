@@ -10,18 +10,18 @@ const Courses = ({
   show = false
 }) => {
     
-  if(show){
+  
     return (
     <>
-        <div className="card">
+       {name &&( <div className="card">
             <img src={images} alt="" />
             <h3>{name}</h3>
             <h3>${price}</h3>
             <span>Rating {rating}</span>
-        </div>
+        </div>)}
     </>
   )
-  }
+  
 }
 
 Courses.propTypes = {
